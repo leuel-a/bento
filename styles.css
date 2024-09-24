@@ -1,0 +1,167 @@
+/*Resets*/
+body,
+div,
+ul,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('./assets/fonts/DMSans.ttf') format('truetype');
+}
+
+@font-face {
+  font-style: italic;
+  font-family: 'DM Sans';
+  src: url('./assets/fonts/DMSans-Italic.ttf') format('truetype');
+}
+
+:root {
+  --ff-sans: 'DM Sans';
+
+  --clr-purple-100: 254 88% 90%;
+  --clr-purple-500: 256 67% 59%;
+
+  --clr-yellow-100: 31 66% 93%;
+  --clr-yellow-500: 39 100% 71%;
+
+  --clr-background: #F5F5F5;
+  --clr-white: 0 0% 100%;
+  --clr-dark: 0 0% 7%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-full {
+  height: 100%;
+}
+
+/*Background Colors*/
+.bg-purple-100 {
+  background-color: hsl(var(--clr-purple-100));
+}
+
+.bg-purple-500 {
+  background-color: hsl(var(--clr-purple-500));
+}
+
+.bg-yellow-100 {
+  background-color: hsl(var(--clr-yellow-100));
+}
+
+.bg-yellow-500 {
+  background-color: hsl(var(--clr-yellow-500));
+}
+
+.bg-white {
+  background-color: white;
+}
+
+/*Text Colors*/
+.text-purple-100 {
+  color: hsl(var(--clr-purple-100));
+}
+
+.text-purple-500 {
+  color: hsl(var(--clr-purple-500));
+}
+
+.text-yellow-100 {
+  color: hsl(var(--clr-yellow-100));
+}
+
+.text-yellow-500 {
+  color: hsl(var(--clr-yellow-500));
+}
+
+.text-white {
+  color: white;
+}
+
+/*Text Utils*/
+.text-italic {
+  font-style: italic;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*Fonts*/
+.font-sans {
+  font-family: var(--ff-sans), sans-serif;
+}
+
+/*Font Utils*/
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.container > * {
+  border-radius: 1rem;
+}
+
+@media (max-width: 45rem) {
+  .container {
+    grid-template-columns: 100%
+  }
+}
+
+body {
+  padding-inline: 1rem;
+  padding-block: 1.2rem;
+  font-size: 1.125rem;
+  font-family: var(--ff-sans), sans-serif;
+  background-color: var(--clr-background);
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.testimonial-rating {
+  padding-block: 2rem;
+  padding-inline: 2rem;
+}
+
+.rating-img {
+  margin-top: 1rem;
+}
+
+#five-stars-img {
+  width: 12rem;
+}
+
+.manage-platforms {
+  padding-inline: 1rem;
+  padding-block: 1rem;
+}
+
+.manage-platforms > p {
+  line-height: 1;
+  margin-top: .5rem;
+  font-size: 1.5rem;
+}
