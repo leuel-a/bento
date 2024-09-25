@@ -210,7 +210,7 @@ h1 {
 }
 
 #consistent-schedule-container {
-  overflow-block: clip;
+  overflow: clip;
 }
 
 #consistent-schedule {
